@@ -1,0 +1,11 @@
+// 解决fixed穿透问题
+  function getTop(){
+    var $body = $('body');
+    if($body.css("position") != 'fixed'){
+      var top = $(window).scrollTop();
+      $(window).scrollTop(top);
+    }else{
+      $('body').removeClass("fixed");
+      $(window).scrollTop(-parseInt($body.css('top')));
+    }
+  }
