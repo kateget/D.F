@@ -5,3 +5,16 @@
   快捷键:Ctrl+alt+F2
   再从dos界面切换回图形界面
   快捷键:Ctrl+alt+F1
+3.用命令安装软件
+  一般来说著名的linux系统基本上分两大类：
+  1) RedHat系列：Redhat、Centos、Fedora等
+  2) Debian系列：Debian、Ubuntu等
+  RedHat 系列：
+  1) 常见的安装包格式 rpm 包，安装rpm包的命令是 “rpm -参数”
+  2) 包管理工具 yum
+  3) 支持tar包
+  Debian系列
+  1) 常见的安装包格式 deb 包，安装deb包的命令是 “dpkg -参数”
+  2) 包管理工具 apt-get
+  3) 支持tar包
+  所以你Ubuntu不该用yum 该用apt-get
