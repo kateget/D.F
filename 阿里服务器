@@ -21,3 +21,6 @@
 4.安装远程管理工具
  1) 服务器：yum install nginx
  2) 本地安装：xshell
+    连接xshell阿里服务器失败：
+      设置安全组：https://blog.csdn.net/zhangxing52077/article/details/78048254?tdsourcetag=s_pctim_aiomsg
+ 3) 安装winscp
