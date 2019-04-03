@@ -20,4 +20,4 @@
   所以你Ubuntu不该用yum 该用apt-get
 4.安装远程管理工具
  1) 服务器：yum install nginx
- 2) 本地安装：xshall
+ 2) 本地安装：xshell
