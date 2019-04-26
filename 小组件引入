@@ -1,0 +1,10 @@
+Facebook
+<div class="com_main fb-page" data-href="https://www.facebook.com/PUBGMOBILE.TW.OFFICIAL" data-tabs="timeline" data-width="442" data-height="784" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/PUBGMOBILE/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/PUBGMOBILE/" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'pc_par_community_facebook'});">PUBG MOBILE</a></blockquote></div>
+Twitter
+<a class="twitter-timeline"
+href="https://twitter.com/PUBGMobileLive"
+data-height="inherit" data-chrome="noheader nofooter" onclick="gtag('event', 'x_click', {'event_category': 'website','event_label': 'pc_par_community_twitter'});"></a>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+ins
+<div class="instawidget" data-user-name="YOURUSERNAME" data-amount="6" data-grid="6"></div>
+<script type="text/javascript" src="//www.stadget.com/cdn/widget-init.min.js"></script>
