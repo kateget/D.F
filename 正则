@@ -1,2 +1,6 @@
 1. 匹配 {# #}中间的内容，不包括标识符
-  例如：'adf{# wo d m y #}safsdf {# n t m z s y b #}adfd'.match(/(?<={#)([^{##}]*)(?!#})/g)
+  例如：'adf{# wo d m y #}safsdf {# n t m z s y b #}adfd'.match(/(?<={#\s)(.*)(?=\s#})/g)
+2. 动态匹配正则
+  var startSymbol = '{#',endSymbol = '#}';
+  expr = new RegExp('(?<=' + startSymbol + '\\s)(.*)(?=\\s' + endSymbol + ')', 'gim');
+  结果：/(?<={#\s)(.*)(?=\s#})/gim
