@@ -1,3 +1,3 @@
 每日正则小游戏！
 1.拉取网易云音乐列表中的音乐id -- 2019/0529
-  $('html').innerHTML.match(/<a href="\/song?[^\<\>]*">/g)
+  $('html iframe').contentWindow.document.getElementsByTagName('html')[0].innerHTML.match(/<a href="\/song?[^\<\>]*">/g)
