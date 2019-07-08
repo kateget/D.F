@@ -2,5 +2,5 @@
   例如：'adf{# wo d m y #}safsdf {# n t m z s y b #}adfd'.match(/(?<={#\s)([^{##}]*)(?=\s#})/g)
 2. 动态匹配正则
   var startSymbol = '{#',endSymbol = '#}';
-  expr = new RegExp('(?<=' + startSymbol + '\\s)(.*)(?=\\s' + endSymbol + ')', 'gim');
-  结果：/(?<={#\s)(.*)(?=\s#})/gim
+  expr = new RegExp('(?<=' + startSymbol + '\\s)(.*?)(?=\\s' + endSymbol + ')', 'gim');
+  结果：/(?<={#\s)(.*?)(?=\s#})/gim
