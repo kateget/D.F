@@ -1,0 +1,18 @@
+.list_winners::-webkit-scrollbar {
+    width: 0.05rem;
+}
+
+.list_winners::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0.06rem rgba(33, 78, 147, 1);
+    border-radius: 10px;
+}
+
+.list_winners::-webkit-scrollbar-thumb {
+    border-radius: 0.1rem;
+    background: rgba(90, 169, 236, 0.8);
+    -webkit-box-shadow: inset 0 0 0.06rem rgba(90, 169, 236, 0.8);
+}
+
+.list_winners::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(90, 169, 236, 0.8);
+}
