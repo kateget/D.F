@@ -1,0 +1,50 @@
+> 延伸：有关GA代码引入
+> 
+> 其实主要引入的代码长这样子（但是不允许这样引入）：
+> ```javascript
+> <!-- Global site tag (gtag.js) - Google Analytics -->
+> <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+> <script>
+>   window.dataLayer = window.dataLayer || [];
+>   function gtag(){dataLayer.push(arguments);}
+>   gtag('js', new Date());
+> 
+>   gtag('config', 'GA_TRACKING_ID');
+> </script>
+> ```
+> 其中 ```GA_TRACKING_ID``` 需要替换为该项目的具体ID。
+
+### 事件跟踪
+格式如下：
+```javascript
+gtag('event', <action>, {               // <action>为事件操作
+  'event_category': <category>,         // <category>为事件类别
+  'event_label': <label>,               // <label>为事件标签
+});
+```
+根据事件不同替换上述```action```，```category```和```label```：（不停更新中）
+- ```action```分为下列五类:```x_click```，```x_share```（分享），```x_download```（下载），```x_jump```（链接），```x_play_video```（播放视频），一般来说大多数都是```x_click```。
+- ```category```按照官网和专题分类：
+官网的```category```统一为```website```，
+专题的```category```根据不同的专题起不同的名字，比如20181111halloweeks。
+- ```label```标签需要准确反映出该事件的来源，举例：
+```pc_header_nav``` 代表 pc 端顶部的导航栏；
+```m_news_more``` 代表移动端新闻点击查看更多。
+- 一个完整的实例：
+```javascript
+<a href="https://app.adjust.com/4yxckw " target="_blank" onclick="gtag('event', 'x_download', {'event_category': 'website','event_label': 'pc_nav_app'});">
+```
+
+twitter 打点：
+    <script>
+        !function (e, t, n, s, u, a) {
+        e.twq || (s = e.twq = function () {
+            s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+        }, s.version = '1.1', s.queue = [], u = t.createElement(n), u.async = !0, u.src = '//static.ads-twitter.com/uwt.js',
+            a = t.getElementsByTagName(n)[0], a.parentNode.insertBefore(u, a))
+        }(window, document, 'script');
+        // Insert Twitter Pixel ID and Standard Event data below
+        twq('init', 'twitter_id');
+        twq('track', 'PageView');
+    </script>
+    twttr.conversion.trackPid('twitter_id'）
