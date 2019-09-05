@@ -1,0 +1,15 @@
+解决ios无法播放的问题：
+
+<video id="video_p1" src="./images/rp8_pv5s.mp4" muted="muted" loop="loop" playsinline="playsinline" webkit-playsinline="webkit-playsinline" x5-video-player-type="h5">
+</video>
+
+$(function() {
+    var video = $("#video_p")[0];
+
+    $(".mobileshow").on("click", function() {
+        video.play();
+    })
+    $(".mobileshow").trigger("click");
+})
+
+参数解释：https://www.jianshu.com/p/1af67479d620
