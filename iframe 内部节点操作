@@ -1,0 +1,6 @@
+function setIframeColor() {
+        var x = document.getElementById("twitter-widget-0");
+        var y = (x.contentWindow || x.contentDocument);
+        if (y.document) y = y.document;
+        y.getElementsByClassName("timeline-Widget")[0].style.backgroundColor = 'transparent'
+    }
