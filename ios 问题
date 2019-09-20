@@ -1,0 +1,5 @@
+1.滚轮滚动，页面抖动
+  如果用到了overflow:scroll会出现上述问题，请换成如下属性
+  -webkit-overflow-scrolling:touch
+2.无法平滑滚动
+  使用jq animate方法
