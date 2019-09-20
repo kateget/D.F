@@ -3,6 +3,7 @@
   -webkit-overflow-scrolling:touch
 2.无法平滑滚动
   使用jq animate方法
+  必须 特定的上下文 才能解决问题
   var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
 
   $(document).on('click touchstart', '.backtotop', function() {
