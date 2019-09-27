@@ -9,3 +9,7 @@
       $(window).scrollTop(-parseInt($body.css('top')));
     }
   }
+
+页面不随着鼠标滚动
+body上面加 fixed
+并且body上添加    overflow-y: scroll;属性
