@@ -1,2 +1,3 @@
 1.引入文件方法load 失效
 $("XXX").load("url",function(){})
+2.正则match方法失败
