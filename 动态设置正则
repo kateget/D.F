@@ -1,0 +1,5 @@
+var arr=['<div','app-header','app-chart','button'];
+//下面3种方法均能达到动态生成正则表达式的效果，eval不建议使用
+var pattern = /<div(([\s\S])*?)<\/div>/g;
+var re =new RegExp(arr[0] + "(([\\s\\S])*?)<\\/div>","g");
+var ree = eval("/"+arr[0] + "(([\\s\\S])*?)<\\/div>/g")
