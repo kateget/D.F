@@ -1,0 +1,27 @@
+1.ts vs格式化问题
+添加如下设置：
+"editor.renderControlCharacters": true, //让prettier使用eslint的代码格式进行校验
+    "prettier.semi": true, //代码结尾的分号
+    "prettier.singleQuote": true, //使用带引号替代双引号
+    "prettier.trailingComma": "es5", // 对象属性最后有 ","
+    // 设置 eslint 保存时自动修复
+    "eslint.autoFixOnSave": true,
+    // eslint 检测文件类型
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue",
+        {
+            "language": "html",
+            "autoFix": true
+        },
+        {
+            "language": "vue",
+            "autoFix": true
+        },
+        {
+            "language": "typescript",
+            "autoFix": true
+        },
+        "typescriptreact",
+    ],
