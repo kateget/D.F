@@ -31,3 +31,5 @@ git push origin head ( 推送到当前分支的远端仓库)
 git clone xxx(github仓库)
 -多命令操作
 git add. &&git commit -m"完成"xxx"
+-切换分支
+git switch dev
