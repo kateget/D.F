@@ -1,0 +1,33 @@
+-新建仓库
+git init xxx
+-创建文件
+touch xxx.txt
+-添加
+git add.
+-查看提交状态
+git commit -m "xxx"
+-查看提交记录
+git log/git log -p/git log --online --all(可选) --graph(图形化‘可选)
+-切换到固定版本
+git checkout branch_id
+-切换到上一次的版本
+git checkout -
+-打开可视化界面控制台
+git --all &
+-创建分支
+git branch xxx
+-分支合并
+git merge branch_name
+-更新代码
+git pull(相当于git fetch &&git  merge)
+git pull origin head拉取远程仓库代码
+-链接到远端仓库
+git remote xxx (远端github地址)
+git remote -v(查看git地址)
+-推送到远端仓库
+git push -u github(仓库名) master(分支名)
+git push origin head ( 推送到当前分支的远端仓库)
+-拉取远端仓库代码
+git clone xxx(github仓库)
+-多命令操作
+git add. &&git commit -m"完成"xxx"
