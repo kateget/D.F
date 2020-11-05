@@ -33,3 +33,9 @@ git clone xxx(github仓库)
 git add. &&git commit -m"完成"xxx"
 -切换分支
 git switch dev
+-对比已暂存文件与最后一次提交的差异
+git diff --staged
+-直接提交，跳过git add
+git commit -a 
+参考页面
+https://juejin.im/post/6891146425590087693
