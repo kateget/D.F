@@ -13,7 +13,7 @@ git checkout branch_id
 -切换到上一次的版本
 git checkout -
 -打开可视化界面控制台
-git --all &
+gitk --all &
 -创建分支
 git branch xxx
 -分支合并
