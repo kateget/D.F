@@ -3,6 +3,7 @@
 ls
 查看文件目录
 参考：https://juejin.cn/post/6907988697510051854
+https://www.jianshu.com/p/506c759d571d
 1. 定义变量
 message='name'/message=name
 注意：在等号两边不要加空格。Bash 的语法在不少地方是比较“吹毛求疵”
